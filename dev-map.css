@@ -1,0 +1,87 @@
+body { margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+#map-container { position: relative; height: 900px; width: 100%; }
+#map { height: 100%; width: 100%; }
+
+.search-box {
+  position: absolute; top: 20px; left: 50%;
+  transform: translateX(-50%); z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px; border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex; gap: 6px; align-items: center;
+}
+
+.search-box input {
+  font-size: 15px; padding: 6px 10px; width: 180px;
+  border: 1px solid #ccc; border-radius: 4px;
+  transition: border-color 0.2s; outline: none;
+}
+
+.search-box input:focus { border-color: #4a90e2; }
+
+.search-box button {
+  background: none; border: none; cursor: pointer;
+  padding: 6px 8px; border-radius: 4px;
+  transition: background-color 0.2s; display: flex; align-items: center;
+}
+
+.search-box button:hover { background: #e6e6e6; }
+
+.logo-container {
+  position: absolute; bottom: 16px; right: 16px; z-index: 1000;
+}
+
+.logo-container img {
+  width: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: opacity 0.3s;
+}
+
+.logo-container img:hover { opacity: 1; }
+
+.attribution {
+  font-size: 10px; color: #999;
+  text-align: left; margin-top: 4px;
+}
+
+.leaflet-popup-content {
+  white-space: nowrap;
+  width: auto !important;
+  max-width: none !important;
+  overflow: visible;
+  font-size: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.leaflet-popup-tip { 
+  margin-left: 10px !important; 
+  background-color: #fdfdfd;
+  border: 1px solid #999;
+  border-radius: 0;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.leaflet-popup-content table td { white-space: nowrap; }
+
+@media (max-width: 600px) {
+  .leaflet-popup-content-wrapper,
+  .leaflet-popup-tip-container {
+    max-width: 95vw !important;
+  }
+
+  .leaflet-popup-content {
+    min-width: auto;
+    max-width: 95vw;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .leaflet-popup-content table {
+    width: 100%;
+    vertical-align: top;
+    font-size: 13px;
+  }
+}
