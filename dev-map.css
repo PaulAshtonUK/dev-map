@@ -1,25 +1,3 @@
-/* Hide Squarespace layout */
-.site-wrapper, .site-header, .site-footer, .sqs-announcement-bar, .page-section, .page, .sqs-block {
-  display: none !important;
-}
-
-/* Also hide common header sticky elements */
-.Header,
-.Header-inner,
-.Header-branding,
-.Header-nav,
-.Header-nav-inner,
-.Header-actions,
-.Header-nav--primary,
-.Header-nav--secondary,
-.Header.is-sticky,
-.Header--sticky,
-.Header-sticky {
-  display: none !important;
-}
-
-
-  /* Then your body and map styles */
   html, body {
     height: 100% !important;
     margin: 0 !important;
