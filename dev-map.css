@@ -1,3 +1,54 @@
+  /* Squarespace layout hiding - put this FIRST */
+  .site-wrapper,
+  .site-header,
+  .site-footer,
+  .sqs-announcement-bar,
+  .page-section,
+  .page,
+  .sqs-block,
+  .Header,
+  .Header-inner,
+  .Header-branding,
+  .Header-nav,
+  .Header-nav-inner,
+  .Header-actions,
+  .Header-nav--primary,
+  .Header-nav--secondary {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: -9999 !important;
+  }
+
+  .Header.is-sticky,
+  .Header--sticky,
+  .Header-sticky {
+    display: none !important;
+    z-index: -9999 !important;
+  }
+
+  /* Then your body and map styles */
+  html, body {
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    background: #fff !important;
+  }
+
+  #map {
+    height: 100% !important;
+    width: 100% !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 9999 !important;
+  }
+
 body { margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 #map-container { position: relative; height: 900px; width: 100%; }
