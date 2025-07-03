@@ -1,35 +1,23 @@
-  /* Squarespace layout hiding - put this FIRST */
-  .site-wrapper,
-  .site-header,
-  .site-footer,
-  .sqs-announcement-bar,
-  .page-section,
-  .page,
-  .sqs-block,
-  .Header,
-  .Header-inner,
-  .Header-branding,
-  .Header-nav,
-  .Header-nav-inner,
-  .Header-actions,
-  .Header-nav--primary,
-  .Header-nav--secondary {
-    display: none !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    overflow: hidden !important;
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    z-index: -9999 !important;
-  }
+/* Hide Squarespace layout */
+.site-wrapper, .site-header, .site-footer, .sqs-announcement-bar, .page-section, .page, .sqs-block {
+  display: none !important;
+}
 
-  .Header.is-sticky,
-  .Header--sticky,
-  .Header-sticky {
-    display: none !important;
-    z-index: -9999 !important;
-  }
+/* Also hide common header sticky elements */
+.Header,
+.Header-inner,
+.Header-branding,
+.Header-nav,
+.Header-nav-inner,
+.Header-actions,
+.Header-nav--primary,
+.Header-nav--secondary,
+.Header.is-sticky,
+.Header--sticky,
+.Header-sticky {
+  display: none !important;
+}
+
 
   /* Then your body and map styles */
   html, body {
